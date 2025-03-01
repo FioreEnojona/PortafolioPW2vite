@@ -4,19 +4,15 @@
 @secondary-bg-color: rgb(2, 0, 2);
 @secondary-text-color: rgb(255, 255, 255);
 
-.footer {
+@third-bg-color: rgb(55, 54, 55);
+
+
+footer {
     width: 100%;
     color: @secondary-text-color;
     text-align: center;
     padding: 10px 0;
-    background-color: @primary-bg-color;
-
-    p {
-        color: @secondary-text-color;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
+    background-color: @third-bg-color;
     nav {
         ul {
             list-style: none;
@@ -32,31 +28,37 @@
                     display: inline-block;
                     color: @secondary-text-color;
                     text-decoration: none;
-                    padding: 8px 12px;  /* Tamaño en píxeles */
+                    padding: 8px 12px;  
                     transition: background-color 1s ease, color 1s ease;
-                    background-color: @primary-bg-color;
 
                     img {
-                        width: 30px; /* Tamaño del ícono en píxeles */
+                        width: 40px; 
                         height: auto;
                         transition: transform 0.3s ease;
                         background-color: @primary-bg-color;
-                        /* Añadido border-box en caso de padding extra */
                         box-sizing: border-box;
+                        &:hover {
+                            background-color: @primary-bg-color;
+                            color: @secondary-text-color;
+                            .resaltar();
+                        }
                     }
-
-                    &:hover {
-                        background-color: @primary-bg-color;
-                        color: @secondary-text-color;
-                    }
+ 
                 }
             }
         }
     }
+
+    p {
+        color: @secondary-text-color;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 720px) {
-    .footer {
+    footer {
         padding: 8px 0;
         font-size: 16px;  /* Tamaño de texto en píxeles para pantallas pequeñas */
 
