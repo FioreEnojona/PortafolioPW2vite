@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "less": "^4.2.2",
     "purgecss": "^7.0.2",
     "vite": "^6.2.0",
     "vite-plugin-purgecss": "^0.2.12"
