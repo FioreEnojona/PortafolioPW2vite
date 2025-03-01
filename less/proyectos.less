@@ -1,0 +1,60 @@
+/* Estilos para la sección de Proyectos */
+.proyectos {
+    background-color: @secondary-bg-color;
+    color: @secondary-text-color;
+    padding: 4rem 2rem;
+
+    h2 {
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        .proyecto {
+            background-color: @primary-bg-color;
+            border-radius: 1rem;
+            width: 300px;
+            padding: 1.5rem;
+            text-align: center;
+
+            img {
+                width: 100%;
+                border-radius: 1rem;
+                height: auto;
+            }
+
+            h3 {
+                font-size: 1.8rem;
+                margin-top: 1rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin-top: 0.5rem;
+                letter-spacing: 0.1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: @secondary-text-color;
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                display: inline-block;
+                background-color: @primary-bg-color;
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: @secondary-bg-color;
+                }
+            }
+        }
+    }
+}

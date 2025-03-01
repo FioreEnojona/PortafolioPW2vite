@@ -1,0 +1,140 @@
+
+.contacto {
+    background-color: @primary-bg-color;
+    width: 100%;
+    height: auto;
+    padding: 0 2rem 5rem 2rem;
+
+    h2 {
+        display: block;
+        text-align: center;
+        font-size: 2.4rem;
+        letter-spacing: .1rem;
+        padding: 6rem 0 4rem 0;
+        color: @secondary-text-color;
+    }
+
+    .container--contacto {
+        width: 100%;
+        background-color: @secondary-bg-color;
+        border-radius: 24px;
+        padding: 3rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .container_text--contacto {
+            width: 100%;
+            text-align: center;
+
+            p {
+                font-size: 1.6rem;
+                font-family: 'Cooper Hewitt';
+                color: @secondary-text-color;
+                margin-bottom: 3rem;
+                letter-spacing: 1px;
+                line-height: 2.3rem;
+            }
+        }
+    }
+
+    .formcontacto {
+        input, textarea {
+            font-family: 'Cooper Hewitt';
+            background: transparent;
+            border: 1px solid @primary-text-color;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 1rem;
+            color: @secondary-text-color;
+            font-size: 1.6rem;
+            outline: none;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+
+            &::placeholder {
+                color: @primary-text-color;
+            }
+        }
+
+        textarea {
+            resize: none;
+            height: 10rem;
+        }
+
+        .input-invalid {
+            border: 1px solid @primary-text-color;
+            color: @primary-text-color;
+        }
+    }
+
+    .btncontacto {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: @primary-bg-color;
+            border: none;
+            width: 20rem;
+            padding: .8rem 1rem;
+            border-radius: 1rem;
+            color: @secondary-text-color;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 1s all;
+
+            &:hover {
+                background: @secondary-bg-color;
+                color: @primary-bg-color;
+                font-weight: bold;
+                transform: scale(1.1);
+                box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.20);
+                transition: all .4s ease;
+            }
+
+            &:active {
+                background: @secondary-bg-color;
+                color: @primary-bg-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    
+    .contacto {
+        padding: 2rem; 
+    }
+
+    .contacto h2 {
+        font-size: 2rem; 
+        padding: 4rem 0 2rem 0; 
+    }
+
+    .container--contacto {
+        padding: 2rem; 
+    }
+
+    .formcontacto input,
+    .formcontacto textarea {
+        font-size: 1.4rem; 
+        padding: 0.8rem;
+    }
+
+    .formcontacto input::placeholder,
+    .formcontacto textarea::placeholder {
+        font-size: 1.2rem; 
+    }
+
+    .formcontacto .input-invalid {
+        font-size: 1.4rem; 
+    }
+
+    .btncontacto button {
+        width: 100%;
+        font-size: 1.4rem; 
+        padding: 1rem 0; 
+    }
+}

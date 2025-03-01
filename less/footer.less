@@ -1,0 +1,80 @@
+@primary-bg-color: rgb(54, 57, 59);
+@primary-text-color: #737070;
+
+@secondary-bg-color: rgb(2, 0, 2);
+@secondary-text-color: rgb(255, 255, 255);
+
+.footer {
+    width: 100%;
+    color: @secondary-text-color;
+    text-align: center;
+    padding: 10px 0;
+    background-color: @primary-bg-color;
+
+    p {
+        color: @secondary-text-color;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            li {
+                margin: 0;
+
+                a {
+                    display: inline-block;
+                    color: @secondary-text-color;
+                    text-decoration: none;
+                    padding: 8px 12px;  /* Tamaño en píxeles */
+                    transition: background-color 1s ease, color 1s ease;
+                    background-color: @primary-bg-color;
+
+                    img {
+                        width: 30px; /* Tamaño del ícono en píxeles */
+                        height: auto;
+                        transition: transform 0.3s ease;
+                        background-color: @primary-bg-color;
+                        /* Añadido border-box en caso de padding extra */
+                        box-sizing: border-box;
+                    }
+
+                    &:hover {
+                        background-color: @primary-bg-color;
+                        color: @secondary-text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .footer {
+        padding: 8px 0;
+        font-size: 16px;  /* Tamaño de texto en píxeles para pantallas pequeñas */
+
+        nav {
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin: 5px 0;
+
+                    a {
+                        padding: 6px 10px;  /* Tamaño en píxeles */
+                        font-size: 16px;  /* Tamaño de texto en píxeles */
+                        color: @secondary-text-color;
+                        background-color: @primary-bg-color;
+                    }
+                }
+            }
+        }
+    }
+}

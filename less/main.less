@@ -1,1 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@primary-bg-color:rgb(54, 57, 59);
+@primary-text-color:#737070;
+ 
+@secondary-bg-color:rgb(2, 0, 2);
+@secondary-text-color:rgb(255, 255, 255);
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 60px;
+    color: @primary-text-color;
+    background-color: @primary-bg-color;
+
+}
+
+p {
+   font-size: 1.6rem;
+   letter-spacing: 0.2rem;
+
+}
+   
+h2 {
+   font-size: 2rem;
+   color: @secondary-text-color;
+   text-align: center;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding: 2rem;
+}
+
+
+@import "form.less";
+@import "header.less";
+@import "footer.less";
+@import "contacto.less";
+@import "cualidades.less";
+@import "inicio.less";
+@import "proyectos.less";
+@import "sobremi.less";
