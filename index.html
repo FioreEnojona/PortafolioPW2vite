@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portafolio Fiorella Barraza</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="img/iconopilot.png" alt="Logo Portafolio" class="logo__header">
+        <button class="menu-toggle" aria-label="Abrir menú">
+        ☰
+        </button>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Sobre Mi</a></li>
+                <li><a href="#proyectos">Portafolio</a></li>
+                <li><a href="#form">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Inicio" id="inicio">
+        <section class="slider">
+            <section class="frametrack">
+                <section class="slide">
+                    <picture>
+                        <img src="img/20240910_12125611.jpg" alt="foto mia 2" />
+                    </picture>
+                </section>
+                <section class="slide">
+                    <picture>
+                        <img src="img/20241016_15483411.jpg" alt="foto mia 1" />
+                    </picture>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h1>Fiorella Barraza Lara</h1>
+            <h2>Desarrolladora Web</h2>
+            <div class="saludo">
+                <p>Bienvenido a mi magico portafolio. Aqui encontraras informacion sobre mi y mis habilidades. Puedes
+                    poner en contacto conmigo, acepto cualquier reto que se encuentre en mis habilidades y que
+                    enriquezca mi experiencia laboral.</p>
+            </div>
+        </section>
+    </section>
+    <section class="sobremi" id="sobremi">
+        <h2>Sobre mi</h2>
+        <section>
+            <div class="habilidades">
+                <h3>Habilidades</h3>
+                <div class="cards--habilidades">
+                    <img src="img/html-5.png" alt="HTML">
+                    <p>HTML 5</p>
+                </div>
+
+                <div class="cards--habilidades">
+                    <img src="img/css-3.png" alt="CSS">
+                    <p>CSS 3</p>
+                </div>
+
+                <div class="cards--habilidades">
+                    <img src="img/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="cards--habilidades">
+                    <img src="img/photoshop.png" alt="Photoshop">
+                    <p>Photoshop</p>
+                </div>
+
+                <div class="cards--habilidades">
+                    <img src="img/icons8-github-64.png" alt="Githud">
+                    <p>Githud</p>
+                </div>
+        </section>
+        <section>
+            <div class="cualidades">
+                <h3>Cualidades</h3>
+                <div class="cards--cualidades">
+                    <img class="imagen_sobreMi" src="img/icons8-creativity-64.png" alt="Representacion de Creatividad">
+                    <p>Creativa</p>
+
+                </div>
+                <div class="cards--cualidades">
+                    <img class="imagen_sobreMi" src="img/icons8-jedi-32.png" alt="Representacion de Paciencia">
+                    <p>Paciente</p>
+
+                </div>
+                <div class="cards--cualidades">
+                    <img class="imagen_sobreMi" src="img/icons8-r2-d2-50.png" alt="Representacion de Dedicada">
+                    <p>Dedicada</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="biografia">
+                <h3>Biografia</h3>
+                <p>Estudiante de Ingenieria en las Ciencias de la Computacion de la Universidad Catolica de Santa Rosa
+                    de
+                    Copan. A mis tempranos veintes tengo muchisimas ganas de aprender cosas y encontrar en que areas
+                    sobresalgo para explotar ese
+                    talento. Me gusta mucho tiempo pasar en la computadora hasta que termino el trabajo. Trabajo bien de
+                    manera remota desde cualquier parte y siempre me cercioro de dar un buen producto de calidad.
+                    Disfruto
+                    mucho de los lugares silencioso para trabajar y suelo trabajar mejor durante las noches. </p>
+            </div>
+        </section>
+    </section>
+    <section class="proyectos" id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="cardcontainer">
+            <a href="https://josselinpineda.github.io/proyectopw1/" target="_blank">
+                <button class="btn_demo">
+                    <picture>
+                        <img src="img/Captura de pantalla 2025-01-25 1135491.png" alt="foto mia 2" />
+                    </picture>
+                </button>
+            </a>
+            <h3>Proyecto La Cruz Roja</h3> 
+        </div>
+    
+        <div class="cardcontainer">
+            <a href="https://fioreenojona.github.io/PortafolioPW2/" target="_blank">
+                <button class="btn_demo">
+                    <picture>
+                        <img src="img/Captura de pantalla 2025-01-25 17323011.png" alt="Trabajo 1" />
+                    </picture>
+                </button>
+            </a>
+            <h3>Proyecto Portafolio Desarrollador Web</h3>
+        </div>
+    </section>
+    
+    <section class="contacto">
+        <h2 data-section="contacto" data-value="title" data-aos="fade-up" id="contacto">Contacto</h2>
+
+        <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="container--contacto">
+                <div class="container_text--contacto">
+                    <p data-section="contacto" data-value="text">Completa el siguiente formulario y me pondré en
+                        contacto contigo lo antes posible.</p>
+                </div>
+
+                <form id="form" class="formcontacto" name="contactoportafolio" netlify>
+                    <input id="nombre" type="text" name="name" placeholder="Nombre" required>
+                    <input id="email" type="email" name="email" placeholder="E-mail" required>
+                    <input id="asunto" type="text" name="affair" placeholder="Asunto" required>
+                    <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje" required></textarea>
+
+                    <div class="btncontacto">
+                        <button id="btnenviar" type="submit" data-section="contacto"
+                            data-value="btnenviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://gmail.com"><img src="img/logotipo-de-gmail.png" alt="Email"></a></li>
+                <li><a href="https://x.com"><img src="img/gorjeo.png" alt="X"></a></li>
+                <li><a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://youtube.com"><img src="img/youtube.png" alt="YouTube"></a></li>
+                <li><a href="https://github"><img src="img/github.png" alt="Githud"></a></li>
+
+            </ul>
+        </nav>
+        <br>
+        &copy; Fiorella Barraza 2025 &#8482;
+    </footer>
+    
+    <script src="java/java.js"></script>
+</body>
+
+</html>
